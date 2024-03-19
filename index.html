@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="password-generator">
+
+        <div class="container">
+            <div class="password">
+                <div class="password-field js-password-field"></div>
+                <p class="error-message"></p>
+            </div>
+
+            <div class="parameters">
+                <div class="desc">Password Length</div>
+                <div>
+                    <input type="number" min="5" max="30" step="1" value="5" class="length-item js-length-item">
+                    <input type="range" min="5" max="30" step="1" value="5" class="length-range js-length-range">
+                </div>
+
+                <div class="checkbox">
+                    <div class="parameter">
+                        <input type="checkbox" id="number" class="checkbox_input js-number">
+                        <label for="number" class="checkbox_label">Number</label>
+                    </div>
+                    <div class="parameter">
+                        <input type="checkbox" id="sumbols" class="checkbox_input js-sumbols">
+                        <label for="sumbols" class="checkbox_label">Sumbols</label>
+                    </div>
+                </div>
+
+                <div class="button">
+                    <button class="btn js-btn-generate">Generate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
